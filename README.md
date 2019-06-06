@@ -13,7 +13,8 @@
 8. Open C:\ and right click inside the folder and select GIT BASH Here
 9. This will open a command prompt window.
 10. Write clone https://github.com/mitalKarkar/JustEatBDD_Framework and press ENTER.
-11. This will save the project folder JustEatBDD_Framework into your desired folder. 
+11. This will save the project folder JustEatBDD_Framework into C:\.
+12. Edit file path where applicable in TestRunner.java and TestBase.java .
 
 
 
