@@ -7,7 +7,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "C:\\Users\\mitta\\eclipse-workspace\\JustEatCucumber\\src\\main\\java\\com\\qa\\justEatUK\\feature\\just-eat.feature"
+		features = "C:\\JustEatCucumber\\src\\main\\java\\com\\qa\\justEatUK\\feature\\just-eat.feature"
 		,glue = {"com.qa.justEatUK.stepDefinations"}
 		,format= {"pretty","html:test-outout", "json:json_output/cucumber.json", "junit:junit_xml/cucumber.xml"}, 
 		monochrome = true, 

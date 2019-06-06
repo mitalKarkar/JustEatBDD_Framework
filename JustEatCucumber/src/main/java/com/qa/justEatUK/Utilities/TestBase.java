@@ -23,7 +23,7 @@ public class TestBase {
 	public TestBase(){
 		try {
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream("C:\\Users\\mitta\\eclipse-workspace\\JustEatCucumber\\src\\main\\java\\com\\qa\\justEatUK\\Utilities\\config.properties");
+			FileInputStream ip = new FileInputStream("C:\\JustEatCucumber\\src\\main\\java\\com\\qa\\justEatUK\\Utilities\\config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -37,16 +37,13 @@ public class TestBase {
 		String browserName = prop.getProperty("browser");
 		
 		if(browserName.equalsIgnoreCase("chrome")){
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\mitta\\eclipse-workspace\\JustEatCucumber\\src\\main\\java\\com\\qa\\justEatUK\\Utilities\\chromedriver.exe");	
+			System.setProperty("webdriver.chrome.driver", "/JustEatCucumber/src/main/java/com/qa/justEatUK/Utilities/chromedriver.exe");	
 			driver = new ChromeDriver(); 
 		}
 		else if(browserName.equals("firefox")){
 			System.setProperty("webdriver.gecko.driver", "/JustEatCucumber/src/main/java/com/qa/justEatUK/Utilities/geckodriver.exe");	
 			driver = new FirefoxDriver(); 
 		}
-		
-		
-		
 		
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
